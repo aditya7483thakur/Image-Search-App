@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    line-height: 1.6rem;
+}
+
+.first{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 2.8rem;
+}
+
+.outerdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+}
+
+.second{
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 2.2rem;
+}
+
+form{
+    margin-top: 2.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    width: 20%;
+    height: 2rem;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 6px #aaaaaa;
+}
+
+button{
+    box-shadow: 0 0 6px #aaaaaa;
+    background-color: #138065;
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    margin-left: 7px;
+    transition: all 0.1s ease-in-out;
+}
+button:hover{
+    box-shadow: 0 0 7px black;
+}
+
+i{
+  color: white;
+  font-size: 1.3rem;
+}
+
+.search-results{
+    margin-top: 1.7rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.search-result{
+    width: 30%;
+    height: 100%;
+    box-shadow: 0 0 6px #aaaaaa;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.search-result a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    display: block;
+    text-transform: capitalize;
+}
+
+.search-result:hover{
+    box-shadow: 0 0 10px black;
+}
+
+.show-more{
+    background-color: #008cba;
+    font-size: 18px;
+    border: none;
+    color: #fff;
+    padding-top: 5px;
+    text-align: center;
+    display: block;
+    margin: 30px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    width: 8rem;
+}
+
+@media (min-width:481px) and (max-width:768px){
+    .search-result{
+        width: 45%;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (max-width:480px){
+    .search-result{
+        width: 100%;
+        padding: 20px;
+        margin: 1rem;
+    }
+}
